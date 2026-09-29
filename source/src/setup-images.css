@@ -1,0 +1,36 @@
+.setupImages {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  padding: 0 20px 20px;
+}
+
+.setupImage {
+  overflow: hidden;
+  padding: 0;
+  color: #526f94;
+  text-align: left;
+  cursor: pointer;
+  background: #fff;
+  border: 1px solid #d6e4f7;
+  border-radius: 9px;
+}
+
+.setupImage img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  object-position: top;
+}
+
+.setupImage small {
+  display: block;
+  padding: 8px;
+  font-size: 12px;
+  line-height: 1.45;
+}
+
+@media (max-width: 520px) {
+  .setupImages { grid-template-columns: 1fr; }
+}
