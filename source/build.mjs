@@ -25,5 +25,5 @@ try {
 await mkdir(resolve(output,'assets'),{recursive:true});
 await writeFile(resolve(output,`assets/manual-${hash}.js`),js);
 await writeFile(resolve(output,`assets/manual-${hash}.css`),css);
-await writeFile(resolve(output,'index.html'),`<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Dino CRM 操作手册｜Dino CRM Manual</title><meta name="description" content="中英双语、可搜索的 Dino CRM 在线操作手册，含营销中心配置、优惠码、落地页及培训演练。"><link rel="icon" href="./favicon.svg"><link rel="stylesheet" href="./assets/manual-${hash}.css"></head><body><div id="root">${html}</div><script type="module" src="./assets/manual-${hash}.js"></script></body></html>`);
+await writeFile(resolve(output,'index.html'),`<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Dino CRM 操作手册｜Dino CRM Manual</title><meta name="description" content="中英双语、可搜索的 Dino CRM 在线操作手册，含营销中心配置、优惠码、落地页及常见问题。"><link rel="icon" href="./favicon.svg"><link rel="stylesheet" href="./assets/manual-${hash}.css"></head><body><div id="root">${html}</div><script type="module" src="./assets/manual-${hash}.js"></script></body></html>`);
 console.log(`Built static manual: ${output}; asset version ${hash}`);
