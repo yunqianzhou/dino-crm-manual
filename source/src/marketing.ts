@@ -12,7 +12,7 @@ export const marketingArticles = [
         "如需支付页：查询可用 SKU（M-03）→ 配置渠道 SKU 关联与各商品售价（M-04）→ 核对 Promo Code 和使用数量（M-05）。一个渠道只维护一套关联。",
         "创建线索搜集页（M-06）或支付落地页（M-07），选择页面样式；KOL 需填写本次帖子的标识或链接。LP ID 在创建落地页时生成，每页独立。",
         "生成预览链接 → 核对配置 → 确认创建 → 从列表复制正式链接（M-08）。预览链接不能作为正式投放链接。",
-        "配置中遇到问题时，查看 M-09“常见问题”；外发前按 M-08 核对页面及正式链接。"
+        "配置中遇到问题时，查看“随手查 → 常见问题”；外发前按 M-08 核对页面及正式链接。"
       ],
       "check": "能说明渠道码、SKU、Promo Code、LP ID 的用途，并按顺序找到四个配置页面。",
       "notes": [
@@ -29,7 +29,7 @@ export const marketingArticles = [
         "For payment pages, check SKUs (M-03), configure the channel’s SKU association and prices (M-04), and review Promo Code limits (M-05). Each channel has one association.",
         "Create a lead page (M-06) or payment page (M-07) and choose a skin. KOL pages require the post ID or URL. Each landing page receives its own LP ID.",
         "Generate a preview, verify the configuration, confirm creation, then copy the final link from the list (M-08). Do not distribute the preview link.",
-        "Use M-09 for common issues and M-08 to verify the page and final link before sharing."
+        "Use Quick links → FAQ for common issues and M-08 to verify the page and final link before sharing."
       ],
       "check": "You can explain channel codes, SKUs, Promo Codes and LP IDs, and locate all four configuration pages.",
       "notes": [
@@ -361,57 +361,119 @@ export const marketingArticles = [
         "To stop a campaign, coordinate its advertising and distributed links with the campaign owner, then confirm how and when the change takes effect."
       ]
     }
-  },
-  {
-    "id": "M-09",
-    "module": "营销中心",
-    "roles": "运营；管理员",
-    "zh": {
-      "title": "营销中心常见问题",
-      "summary": "按遇到的问题查找处理方法；仍无法完成时，向管理员或对应负责人提供渠道码、LP ID 和页面提示。",
-      "steps": [
-        "看不到入口、按钮或业务线：先核对当前账号和业务线。缺少入口或按钮联系管理员检查权限；列表无数据先重置筛选。",
-        "渠道搜到了却无法继续：输入名称或渠道码后，还需要点击下拉匹配结果；仅输入文字不算选中渠道。",
-        "渠道无法再次新建关联：一个渠道只维护一套 SKU 关联，请返回列表编辑已有记录。",
-        "“保存关联”不可用：检查是否选择渠道、是否确认添加 SKU，以及是否还有未完成的批量选择。",
-        "支付页没有可用 SKU：核对该渠道是否已关联同业务线、适用于 Landing Page 的可用商品；商品缺失或信息有误时联系商品负责人。",
-        "折扣或立减报错：折扣填写减价百分比，最多 20%；立减金额不超过原价的 20%。例如折扣填 10 表示九折，不能填 90。",
-        "优惠数量报错：总数量填写正整数，或留空表示不限；每位用户上限不能留空，也不能大于已填写的总数量。每人限用一次的活动填 1。",
-        "优惠码未生成或页面没有优惠：全部商品按原价时不生成优惠码；已有优惠码时，检查支付页是否选择“使用优惠”，并核对各商品规则价格。",
-        "“确认创建/确认保存”不可点击：先完成必填项并生成预览；修改表单配置后需重新生成预览。",
-        "KOL 页面创建失败：检查帖子标识或链接是否为空，以及同一 KOL 的同一帖子是否已绑定页面。",
-        "复制后只有一串编号：可能复制了 LP ID、渠道码或 Promo Code；需要外发页面时，在落地页列表点击“复制链接”。"
-      ],
-      "check": "已按对应问题完成检查，并重新尝试原操作。",
-      "notes": [
-        "仍无法处理时，提供业务线、渠道名称/渠道码、落地页名称/LP ID、操作时间及错误提示，便于定位。",
-        "权限问题联系管理员；商品问题联系商品负责人；价格和优惠规则问题联系活动负责人。"
-      ]
-    },
-    "en": {
-      "title": "Marketing Center FAQ",
-      "summary": "Find the fix for your issue. If it persists, provide the channel code, LP ID and message to the relevant owner.",
-      "steps": [
-        "Missing entries, actions or business lines: verify the account and business line. Ask an administrator to check access; reset filters for an empty list.",
-        "Channel search does not complete selection: click the matching dropdown result after entering a name or code.",
-        "Cannot create another association: each channel has one SKU association. Edit the existing record.",
-        "Save Association is unavailable: select a channel, confirm SKU additions and finish any pending batch selection.",
-        "No SKU available for a payment page: check the channel association for eligible Landing Page products in the same business line. Ask the product owner about missing or incorrect products.",
-        "Invalid discount: enter the percentage to subtract, up to 20%, or an amount no greater than 20% of list price. Enter 10 for 10% off, not 90.",
-        "Invalid usage limits: enter a positive total quantity or leave it empty for no total limit. Per-user limit is required and cannot exceed the specified total. Use 1 for once-per-user campaigns.",
-        "No code or page discount: an all-list-price association generates no code. If a code exists, check that Use Discount is selected and verify each SKU’s rule price.",
-        "Confirm Create/Save is disabled: complete the required fields and generate a preview. Generate another preview after changing the configuration.",
-        "KOL page creation fails: check for a missing post ID/URL or an existing page for the same KOL and post.",
-        "Only an identifier was copied: you may have copied an LP ID, channel code or Promo Code. Use Copy Link in the landing-page list for the complete URL."
-      ],
-      "check": "You have checked the relevant settings and retried the original action.",
-      "notes": [
-        "If the problem persists, provide the business line, channel name/code, page name/LP ID, action time and error message.",
-        "Contact an administrator for access, the product owner for products, and the campaign owner for pricing or promotion rules."
-      ]
-    }
   }
 ];
+
+export const marketingFAQ = {
+  "zh": {
+    "title": "营销中心常见问题",
+    "summary": "按遇到的问题查找处理方法；仍无法完成时，向管理员或对应负责人提供渠道码、LP ID 和页面提示。",
+    "items": [
+      {
+        "q": "看不到入口、按钮或业务线",
+        "a": "先核对当前账号和业务线。缺少入口或按钮联系管理员检查权限；列表无数据先重置筛选。"
+      },
+      {
+        "q": "渠道搜到了却无法继续",
+        "a": "输入名称或渠道码后，还需要点击下拉匹配结果；仅输入文字不算选中渠道。"
+      },
+      {
+        "q": "渠道无法再次新建关联",
+        "a": "一个渠道只维护一套 SKU 关联，请返回列表编辑已有记录。"
+      },
+      {
+        "q": "“保存关联”不可用",
+        "a": "检查是否选择渠道、是否确认添加 SKU，以及是否还有未完成的批量选择。"
+      },
+      {
+        "q": "支付页没有可用 SKU",
+        "a": "核对该渠道是否已关联同业务线、适用于 Landing Page 的可用商品；商品缺失或信息有误时联系商品负责人。"
+      },
+      {
+        "q": "折扣或立减报错",
+        "a": "折扣填写减价百分比，最多 20%；立减金额不超过原价的 20%。例如折扣填 10 表示九折，不能填 90。"
+      },
+      {
+        "q": "优惠数量报错",
+        "a": "总数量填写正整数，或留空表示不限；每位用户上限不能留空，也不能大于已填写的总数量。每人限用一次的活动填 1。"
+      },
+      {
+        "q": "优惠码未生成或页面没有优惠",
+        "a": "全部商品按原价时不生成优惠码；已有优惠码时，检查支付页是否选择“使用优惠”，并核对各商品规则价格。"
+      },
+      {
+        "q": "“确认创建/确认保存”不可点击",
+        "a": "先完成必填项并生成预览；修改表单配置后需重新生成预览。"
+      },
+      {
+        "q": "KOL 页面创建失败",
+        "a": "检查帖子标识或链接是否为空，以及同一 KOL 的同一帖子是否已绑定页面。"
+      },
+      {
+        "q": "复制后只有一串编号",
+        "a": "可能复制了 LP ID、渠道码或 Promo Code；需要外发页面时，在落地页列表点击“复制链接”。"
+      }
+    ],
+    "notes": [
+      "仍无法处理时，提供业务线、渠道名称/渠道码、落地页名称/LP ID、操作时间及错误提示，便于定位。",
+      "权限问题联系管理员；商品问题联系商品负责人；价格和优惠规则问题联系活动负责人。"
+    ]
+  },
+  "en": {
+    "title": "Marketing Center FAQ",
+    "summary": "Find the fix for your issue. If it persists, provide the channel code, LP ID and message to the relevant owner.",
+    "items": [
+      {
+        "q": "Missing entries, actions or business lines",
+        "a": " verify the account and business line. Ask an administrator to check access; reset filters for an empty list."
+      },
+      {
+        "q": "Channel search does not complete selection",
+        "a": " click the matching dropdown result after entering a name or code."
+      },
+      {
+        "q": "Cannot create another association",
+        "a": " each channel has one SKU association. Edit the existing record."
+      },
+      {
+        "q": "Save Association is unavailable",
+        "a": " select a channel, confirm SKU additions and finish any pending batch selection."
+      },
+      {
+        "q": "No SKU available for a payment page",
+        "a": " check the channel association for eligible Landing Page products in the same business line. Ask the product owner about missing or incorrect products."
+      },
+      {
+        "q": "Invalid discount",
+        "a": " enter the percentage to subtract, up to 20%, or an amount no greater than 20% of list price. Enter 10 for 10% off, not 90."
+      },
+      {
+        "q": "Invalid usage limits",
+        "a": " enter a positive total quantity or leave it empty for no total limit. Per-user limit is required and cannot exceed the specified total. Use 1 for once-per-user campaigns."
+      },
+      {
+        "q": "No code or page discount",
+        "a": " an all-list-price association generates no code. If a code exists, check that Use Discount is selected and verify each SKU’s rule price."
+      },
+      {
+        "q": "Confirm Create/Save is disabled",
+        "a": " complete the required fields and generate a preview. Generate another preview after changing the configuration."
+      },
+      {
+        "q": "KOL page creation fails",
+        "a": " check for a missing post ID/URL or an existing page for the same KOL and post."
+      },
+      {
+        "q": "Only an identifier was copied",
+        "a": " you may have copied an LP ID, channel code or Promo Code. Use Copy Link in the landing-page list for the complete URL."
+      }
+    ],
+    "notes": [
+      "If the problem persists, provide the business line, channel name/code, page name/LP ID, action time and error message.",
+      "Contact an administrator for access, the product owner for products, and the campaign owner for pricing or promotion rules."
+    ]
+  }
+};
 
 export const marketingImages: Record<string, {file:string; zh:string; en:string}[]> = {
   "M-02": [
